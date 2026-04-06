@@ -1,31 +1,43 @@
-# Lab 05: Motor Control (DC, Servo, Stepper)
+# Lab 05: Display and Input Interfaces (LCD + Keypad)
 
 ## 🎯 Objective
-Control different types of motors.
+Interface a 16x2 LCD display and a 4x4 matrix keypad with Arduino.
 
 ## 🧠 Concepts Covered
-- PWM Control
-- Motor Drivers
-- Actuators
+- I2C communication (LCD)
+- Matrix keypad scanning
+- Display output
+- Combined input-output systems
 
 ## 🔧 Components Required
-- DC Motor
-- Servo Motor
-- Stepper Motor
-- Motor Driver (L298N)
+- Arduino Uno
+- 16x2 LCD Display (I2C)
+- 4x4 Matrix Keypad
+- Jumper wires
 
 ## 🔌 Pin Configuration
-(Depends on setup)
+- LCD (I2C): SDA → A4, SCL → A5
+- Keypad Rows: Pins 9, 8, 7, 6
+- Keypad Columns: Pins 5, 4, 3, 2
 
-## 📜 Description
-This lab demonstrates control of different motor types.
+## 📜 Code Descriptions
+- **Code01:** LCD display — counter and welcome message demo
+- **Code02:** 4x4 Keypad — read and print key presses to Serial Monitor
+- **Code03:** Combined — keypad input displayed on LCD screen
+
+## 🔗 Tinkercad Simulations
+- LCD: https://www.tinkercad.com/things/jOmdscUwkKy
+- Keypad: https://www.tinkercad.com/things/iSIdo5Og2Bd
+- Combined: https://www.tinkercad.com/things/1WfpXofUQ1M
 
 ## ▶️ How to Run
-Upload code and observe motor behavior.
+Install required libraries first:
+- `Adafruit LiquidCrystal` (for LCD)
+- `Keypad` (for 4x4 keypad)
 
 ## 🧪 Practice Task (In-Lab)
-- Change speed/direction
-- Add sensor control
+- Display a countdown timer on the LCD
+- Build a simple PIN entry system using keypad + LCD
 
 ## 📈 Expected Learning Outcome
-Students understand actuator control and driver usage.
+Students understand display interfaces, I2C communication, and combined input-output system design.
